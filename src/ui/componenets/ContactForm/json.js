@@ -1,0 +1,70 @@
+export const json = {
+  title: "Contact Information",
+  description:
+    "Please provide you contact information so we can contact you ancora",
+  logoPosition: "right",
+  logoWidth: "auto",
+  logoHeight: "96",
+  completedHtml:
+    '<div style="max-width:540px;text-align:left;margin:0px auto 16px auto;border: 1px solid rgba(0,0,0,0.25);padding:40px 48px 48px 48px;background-color:#fff;">\n\n<h4>Thank you for completing your patient registration form.</h4>\n<br>\n<p>Dear {firstname-for-complete-page},\n<br>\nYour information has been successfully received, and we look forward to providing you with the highest level of care. \n<br><br>\nIf you have any questions or need to schedule an appointment, please don\'t hesitate to reach out to our office. Our team is here to assist you every step of the way.\n<br><br>\nWarm regards,\n<br>\nCentral Hospital.</p>\n\n</div>',
+  pages: [
+    {
+      name: "page1",
+      elements: [
+        {
+          type: "text",
+          name: "question1",
+          title: "First Name",
+          width: "50%",
+          minWidth: "256px",
+          isRequired: true,
+        },
+        {
+          type: "text",
+          name: "question2",
+          startWithNewLine: false,
+          title: "Last Name",
+          width: "50%",
+          minWidth: "256px",
+          isRequired: true,
+        },
+        {
+          type: "text",
+          name: "question3",
+          title: "Email",
+          width: "50%",
+          minWidth: "256px",
+          isRequired: true,
+        },
+        {
+          type: "text",
+          name: "question4",
+          width: "50%",
+          minWidth: "256px",
+          startWithNewLine: false,
+          title: "Phone",
+        },
+        {
+          type: "text",
+          name: "question5",
+          title: "Address",
+          width: "50%",
+          minWidth: "256px",
+        },
+        {
+          type: "comment",
+          name: "question6",
+          title: "Message",
+        },
+      ],
+      title: "Get In Touch",
+    },
+  ],
+  showQuestionNumbers: "off",
+  questionErrorLocation: "bottom",
+  completeText: "Register",
+  questionsOnPageMode: "singlePage",
+  widthMode: "static",
+  width: "1024",
+  fitToContainer: true,
+};
