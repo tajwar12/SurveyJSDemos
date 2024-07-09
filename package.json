@@ -11,6 +11,8 @@
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "survey-creator-core": "^1.11.5",
+    "survey-creator-react": "^1.11.5",
     "survey-react-ui": "^1.11.5",
     "web-vitals": "^2.1.4"
   },

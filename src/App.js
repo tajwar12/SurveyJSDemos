@@ -8,6 +8,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Panel from "./ui/componenets/Panel/Panel";
 import DynamicPanel from "./ui/componenets/DynamicPanel/DynamicPanel";
+import CustomizeQs from "./ui/componenets/CustomizeQs/CustomizeQs";
+import LoginPage from "./ui/pages/LoginPage/LoginPage";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("Form1");
@@ -22,6 +24,10 @@ function App() {
         return <Panel />;
       case "DynamicPanel":
         return <DynamicPanel />;
+      case "CustomizeQs":
+        return <CustomizeQs />;
+      case "Playwright":
+        return <LoginPage />;
       case "Logo":
         return <img src="images.png" alt="Logo" />;
       default:
@@ -57,6 +63,12 @@ function App() {
               </Nav.Link>
               <Nav.Link onClick={() => setActiveComponent("DynamicPanel")}>
                 Dynamic Panel
+              </Nav.Link>
+              <Nav.Link onClick={() => setActiveComponent("CustomizeQs")}>
+                Customize Questions
+              </Nav.Link>
+              <Nav.Link onClick={() => setActiveComponent("Playwright")}>
+                Playwright
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
